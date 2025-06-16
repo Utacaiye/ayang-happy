@@ -186,15 +186,18 @@
   </div>
 
   <!-- YouTube Music Embed -->
-  <iframe 
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Rp4jXmPmy54"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-  </iframe>
+  <audio id="musik" autoplay loop>
+  <source src="sal.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener('load', function() {
+    const audio = document.getElementById('musik');
+    audio.play().catch((error) => {
+      console.log("Autoplay diblokir. Menunggu interaksi pengguna...");
+    });
+  });
+</script>
 
   <!-- Tombol lucu -->
   <button class="btn" onclick="alert('Ayang senyum gak? Ehe ehe~ 😚💛')">
