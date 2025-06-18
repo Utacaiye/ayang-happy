@@ -26,19 +26,19 @@
 
   <h1>Pilih Gambar Bumi Berdasarkan Kualitas</h1>
   <select id="qualitySelect" onchange="updateEarthImage()">
-    <option value="e1.jpg">144p</option>
-    <option value="e2.jpg">480p</option>
-    <option value="e3.jpg" selected>720p</option>
-    <option value="e4.jpg">1080p</option>
-    <option value="e5.jpg">4K</option>
+    <option value="./e1.jpg">144p</option>
+    <option value="./e2.jpg">480p</option>
+    <option value="./e3.jpg" selected>720p</option>
+    <option value="./e4.jpg">1080p</option>
+    <option value="./e5.jpg">4K</option>
   </select>
 
   <div>
-    <img id="earthImage" src="earth-720.jpg" alt="Gambar Bumi">
+    <img id="earthImage" src="./images/earth-720.jpg" alt="Gambar Bumi">
   </div>
 
   <h2>Foto Orang Tersayang</h2>
-  <img src="foto-tersayang.jpg" alt="Foto Orang Tersayang">
+  <img src="./images/foto-tersayang.jpg" alt="Foto Orang Tersayang">
 
   <script>
     function updateEarthImage() {
